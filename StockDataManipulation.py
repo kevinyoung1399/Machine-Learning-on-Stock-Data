@@ -242,11 +242,6 @@ def machine_learning_KNNC(ticker):
     # apply K Nearest Neighbors classifer
     clf = neighbors.KNeighborsClassifier()
 
-    # # apply voting classifier
-    # clf = VotingClassifier([('lsvc', svn.LinearSVC()),
-    #                         ('knn', neighbors.KNeighborsClassifier()),
-    #                         ('rfor', RandomForestClassifier())])
-
     # train classifier on data
     # take X data and fit to the y data, for each pairs of X's an y's
     clf.fit(X_train, y_train)
