@@ -1,4 +1,4 @@
-""" This is the python file version on the manipulation and machine learning of the stock data. The Jupyter Notebook version is an easier-to-read version and is included in this repo."""
+Alphabet Inc""" This is the python file version on the manipulation and machine learning of the stock data. The Jupyter Notebook version is an easier-to-read version and is included in this repo."""
 
 import bs4 as bs
 import datetime as dt
@@ -105,7 +105,7 @@ def compile_data():
     print(main_df.head())
     main_df.to_csv('nasdaq_joined_closes.csv')
 
-def visualize_data():
+def visualise_data():
     df = pd.read_csv('nasdaq_joined_closes.csv')
 
     # build a correlation table from the nasdaq_joined_closes data, save into csv
